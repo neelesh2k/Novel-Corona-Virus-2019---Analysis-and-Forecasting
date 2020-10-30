@@ -1,4 +1,9 @@
-
+---
+layout: post
+title: Novel Corona Virus Disease - Analysis and Forecasting
+cover-img: /assets/img/covid-world.jpg
+thumbnail-img: /assets/img/covid-world.jpg
+---
 ### Overview
  2019 Novel Coronavirus (2019-nCoV) is a virus (more specifically, a coronavirus) identified as the cause of an outbreak of respiratory illness first detected in Wuhan, China. Early on, many of the patients in the outbreak in Wuhan, China reportedly had some link to a large seafood and animal market, suggesting animal-to-person spread. However, a growing number of patients reportedly have not had exposure to animal markets, indicating person-to-person spread is occurring. At this time, it’s unclear how easily or sustainably this virus is spreading between people - CDC. This dataset has daily level information on the number of affected cases, deaths and recovery from 2019 novel coronavirus. Please note that this is a time series data and so the number of cases on any given day is the cumulative number. The data is available from 22 Jan, 2020.
 
@@ -33,7 +38,6 @@
 5. Plotly
 6. Statsmodels
 7. Scikit Learn
-8. Facebook’s Prophet
 
 ### Data Cleaning 
 Columns which are not considered:
@@ -129,10 +133,10 @@ pmdarima Auto-ARIMA is a third-party tool which shows a recommended (p,d,q) ARIM
 An R-squared-value of 1.00 depicts that the error is zero. ARIMA model has an R-squared-value of 0.993. Thus, out of the four models, the results of Prophet and ARIMA models will be more accurate. 
 The root-mean-squared-error is compared with the standard deviation of the test data to check the goodness of fit of that model.
 
-1. From the results of the four models and if the same trend continues, we could expect around 4.42 million confirmed cases by May 14, 2020.
-2. From the results of the four models and if the same trend continues, we could expect around 2.5 million active cases by May 14, 2020.
-3. From the results of the four models and if the same trend continues, we could expect around 1.45 million recovered cases by May 14, 2020.
-4. From the results of the four models and if the same trend continues, we could expect around 340,000 deaths by May 14, 2020.
+1. From the results of the two models and if the same trend continues, we could expect around 4.42 million confirmed cases by May 14, 2020.
+2. From the results of the two models and if the same trend continues, we could expect around 2.5 million active cases by May 14, 2020.
+3. From the results of the two models and if the same trend continues, we could expect around 1.45 million recovered cases by May 14, 2020.
+4. From the results of the two models and if the same trend continues, we could expect around 340,000 deaths by May 14, 2020.
 
 ### Actual number of cases on 14th May, 2020
 - Confirmed cases      :   4,442,163  (Predicted : 4,420,000)
